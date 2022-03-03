@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>U.S. Metro Areas Violent Crime Rates by Type</title>
+    </head>
+    <body>
+    <h1>U.S. Metro Areas Violent Crime Rates by Type</h1>
+
+    <table class="table" style="text-align:center !important">
+        <thead>
+            <tr>
+                
+                <th>Originating Case Identifier</th>
+                <th>Year</th>
+                <th>Longitude</th>
+                <th>Latitude</th>
+                <th>Department Name</th>
+                <th>Total Population</th>
+                <th>Homs Sum</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for crime in crimes %}
+            <tr>
+                <td>{{crime["ORI_ID"]}}</td>
+                <td>{{crime["YEAR"]}}</td>
+                <td>{{crime["longitude"]}}</td>
+                <td>{{crime['latitude']}}</td>
+                <td>{{crime["department_id"]}}</td>
+                <td>{{crime["total_pop"]}}</td>
+                <td>{{crime['homs_sum']}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </body>
+</html>
