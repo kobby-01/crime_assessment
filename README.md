@@ -13,7 +13,7 @@ I got the datasource from https://data.world/carlvlewis/u-s-metro-areas-violent-
         .\.venv\Scripts\activate # this activates the virtual environment
         pip install --upgrade pip [ this is optional]  # this installs pip, and upgrades it if required.
 
-I used Flask (https://flask.palletsprojects.com/en/1.1.x/) as our web framework for the application. We install that with 
+I used Flask (https://flask.palletsprojects.com/en/1.1.x/) as our web framework for the application. I install that with 
         
         pip install flask
 
@@ -24,8 +24,8 @@ I was be able to run the datasource to confirm the path is correct, I read the f
         python3 parse_csv.py
 
 #### Running Virtual Server
-        export FLASK_APP=crimes.py
-        export FLASK_ENV=development
+        export / set FLASK_APP=crimes.py
+        export / set FLASK_ENV=development
         python3 -m flask run
 
 ### Error Handling
