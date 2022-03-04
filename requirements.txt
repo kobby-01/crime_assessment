@@ -1,0 +1,11 @@
+click
+Faker
+Flask
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+python-dateutil
+six
+text-unidecode
+Werkzeug
